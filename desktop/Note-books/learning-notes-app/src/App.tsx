@@ -11,6 +11,7 @@ import {
 } from "./utils/storage";
 
 import "./App.css";
+import Practice from "./components/practice";
 
 function App() {
 
@@ -165,7 +166,6 @@ function App() {
     question: string,
     answer: string
   ) => {
-
     const updatedLanguages =
       languages.map((language) => {
 
@@ -250,7 +250,7 @@ function App() {
 
   return (
     <div className="app">
-
+      <Practice />
       <header className="app-header">
 
         <h1>
